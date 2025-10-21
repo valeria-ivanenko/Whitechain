@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Whitechain
 Введення
 Дане тестове завдання було підготовлено компанією WhiteBIT для студентів
@@ -78,3 +79,12 @@ ItemNFT721 (2-4шт)
 Crafting/Search
 Marketplace
 MagicToken (ERC20)
+=======
+  --- Deployed Contract Addresses ---
+  ResourceNFT1155: 0x315Fede443e2bA0C2C841873a10a382a4C2B8a3C
+  ItemNFT721     : 0x661bd41170Bc082252e94D99F5bc85fe7c7000ee
+  MagicToken     : 0xEfF913fC159b49B79236D9F9fA25a94001421c5e
+  CraftingSearch : 0x4B99488E9c837eE21003b86895071037781bf629
+  Marketplace    : 0xE5677f13F11e0D706ed09eBBbBC8FfE1b57441A5
+  Admin          : 0x8fd379246834eac74B8419FfdA202CF8051F7A03
+>>>>>>> 2c4e842 (add readme)
