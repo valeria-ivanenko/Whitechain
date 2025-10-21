@@ -1,90 +1,18 @@
-<<<<<<< HEAD
-Whitechain
-Введення
-Дане тестове завдання було підготовлено компанією WhiteBIT для студентів
-університету НаУКМА. Це завдання дає змогу компанії оцінити аналітичні,
-технічні та архітектурні навички кандидатів.
-Вимоги до коду
-Код має бути виконаний на версії Solidity = 0.8.24, також він має бути
-задеплоєний і верифікований у мережу Whitechain Testnet.
-Має бути 100% покриття тестами свого контракту, і задеплоєно за
-допомогою Hardhat або Foundry, скрипти мають бути написані на TypeScript. 
-Коментарі до коду мають відповідати формату natSpec. 
-Має бути доданий README файл з адресами задеплоєних контрактів, на ньому мають бути
-виконані крафт речей, і всі інструкції для того, щоб задеплоїти проєкт. 
-Посилання на pull request викласти на Distedu.
-Використання таких бібліотек є необов’язковим, та за
-бажанням студента:
-UUPSUpgradeable
-Initializable
-AccessControl
-Та й інші
-Завдання: Гра “Козацький бізнес”
-У грі існує 6 базових ресурсів NFT1155:
-• Дерево (Wood)
-• Залізо (Iron)
-• Золото (Gold)
-• Шкіра (Leather)
-• Камінь (Stone)
-• Алмаз (Diamond)
-Гравці можуть об’єднувати ресурси та створювати унікальні предмети NFT721:
-1. Шабля козака
-• 3× Залізо
-• 1× Дерево
-• 1× Шкіра
-2. Посох старійшини
-• 2× Дерево
-• 1× Золото
-• 1× Алмаз
-3. Броня характерника (не обовʼязково)
-• 4× Шкіра
-• 2× Залізо
-• 1× Золото
-4. Бойовий браслет (не обовʼязково)
-• 4× Залізо
-• 2× Золото
-• 2× Алмаз
-Механіка NFT-1155 / NFT721:
-Створення NFT можливе лише через контракти Crafting або Search.
-Пряме створення або спалення NFT через базові контракти ResourceNFT1155 та
-ItemNFT721 — заборонене.
-Спалення NFT можливе тільки під час продажу предметів у контракті Marketplace.
-Механіка MagicToken (ERC20):
-Токени MagicToken можна отримати лише через продаж предметів у контракті
-Marketplace.
-Пряме мінтинг токенів через контракт MagicToken заборонений. Мінт викликається
-виключно з Marketplace.
-Отримані MagicToken надходять на гаманець гравця після успішного продажу
-предмета.
-Механіка Crafting / Search:
-Гравець може запускати пошук ресурсів раз на 60 секунд.
-Пошук генерує 3 випадкових ресурси (ResourceNFT1155), які надходять на
-гаманець гравця.
-Для створення предмета (ItemNFT721) через крафт, гравець повинен мати
-необхідну кількість ресурсів.
-Під час крафту:
-Ресурси спалюються.
-Створюється предмет (NFT721) з унікальним ID.
-Створені предмети можна:
-продавати на Marketplace,
-або передавати іншим гравцям.
-Механіка Marketplace:
-Гравці можуть продавати предмети (NFT721) за MagicToken.
-Після купівлі предмета:
-NFT спалюється.
-Продавець отримує відповідну кількість MagicToken на свій гаманець.
-Контракти:
-ResourceNFT1155
-ItemNFT721 (2-4шт)
-Crafting/Search
-Marketplace
-MagicToken (ERC20)
-=======
-  --- Deployed Contract Addresses ---
-  ResourceNFT1155: 0x315Fede443e2bA0C2C841873a10a382a4C2B8a3C
-  ItemNFT721     : 0x661bd41170Bc082252e94D99F5bc85fe7c7000ee
-  MagicToken     : 0xEfF913fC159b49B79236D9F9fA25a94001421c5e
-  CraftingSearch : 0x4B99488E9c837eE21003b86895071037781bf629
-  Marketplace    : 0xE5677f13F11e0D706ed09eBBbBC8FfE1b57441A5
+**Deployed Contract Addresses**
+  ```
+  ResourceNFT1155: 0x315Fede443e2bA0C2C841873a10a382a4C2B8a3C  
+  ItemNFT721     : 0x661bd41170Bc082252e94D99F5bc85fe7c7000ee  
+  MagicToken     : 0xEfF913fC159b49B79236D9F9fA25a94001421c5e  
+  CraftingSearch : 0x4B99488E9c837eE21003b86895071037781bf629  
+  Marketplace    : 0xE5677f13F11e0D706ed09eBBbBC8FfE1b57441A5  
   Admin          : 0x8fd379246834eac74B8419FfdA202CF8051F7A03
->>>>>>> 2c4e842 (add readme)
+```
+**Test Results**  
+<img width="712" height="132" alt="Screenshot 2025-10-21 at 11 01 23" src="https://github.com/user-attachments/assets/c482e8fe-fe42-4779-b47a-e84051c68492" />  
+**Deploy Script Run**
+<img width="949" height="770" alt="Screenshot 2025-10-21 at 11 01 15" src="https://github.com/user-attachments/assets/a6060d70-e12e-4243-8a2b-cf6372e2c65d" />
+<img width="893" height="883" alt="Screenshot 2025-10-21 at 11 01 00" src="https://github.com/user-attachments/assets/f4ca05af-2d2e-4bf4-8fb2-6c15622e25ff" />  
+**Screenshots From Whitechain Testnet**  
+<img width="1389" height="653" alt="Screenshot 2025-10-21 at 11 00 32" src="https://github.com/user-attachments/assets/a9333834-a6ed-487d-9b84-133a0acb26d9" />  
+<img width="1398" height="711" alt="Screenshot 2025-10-21 at 11 00 21" src="https://github.com/user-attachments/assets/1fc4694a-dafd-48e1-8000-3b8ff976c062" />
+<img width="1420" height="798" alt="Screenshot 2025-10-21 at 11 00 12" src="https://github.com/user-attachments/assets/b780ec34-dcef-4351-86a0-d417f48cbd01" />
